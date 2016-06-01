@@ -23,7 +23,7 @@
 		<init-param>
 			<description>配置需要纳入容器管理的bean</description>
 			<param-name>BEAN_PACKAGE</param-name>
-			<param-value>com.organisms</param-value>
+			<param-value>test.service</param-value>
 		</init-param>
 
 		<init-param>
