@@ -24,7 +24,7 @@ String path = request.getContextPath();
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-             <li ><a href="${ctx}/admin/manager.action">导出考勤记录</a></li>
+             <li ><a href="${ctx}/admin/manager.action">导入数据</a></li>
             <li class="active"><a href="${ctx}/admin/toUserList.action">人员信息</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
