@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<namespace name="/admin">
+		<action name="manager" method="manager"
+			class="test.action.AdminAction">
+			<result name="success" type="forward">
+				WEB-INF/admin/main.jsp
+			</result>
+		</action>
+		
+		<action name="upload" method="upload"
+			class="test.action.AdminAction">
+			<result name="success" type="forward">
+				WEB-INF/admin/main.jsp
+			</result>
+		</action>
+		
+		<action name="toUserList" method="toUserList"
+			class="test.action.AdminAction">
+			<result name="success" type="forward">
+				WEB-INF/admin/listusers.jsp
+			</result>
+		</action>
+		
+		<action name="toAddUser" method="toAddUser"
+			class="test.action.AdminAction">
+			<result name="success" type="forward">
+				WEB-INF/admin/addUser.jsp
+			</result>
+		</action>
+		
+		<action name="addUser" method="addUser"
+			class="test.action.AdminAction">
+			<result name="success" type="redirect">
+				admin/toUserList.action
+			</result>
+		</action>
+		
+		<action name="toUpdateUser" method="toUpdateUser"
+			class="test.action.AdminAction">
+			<result name="success" type="forward">
+				WEB-INF/admin/updateUser.jsp
+			</result>
+		</action>
+		
+		<action name="updateUser" method="updateUser"
+			class="test.action.AdminAction">
+			<result name="success" type="redirect">
+				admin/toUserList.action
+			</result>
+		</action>
+		
+		<action name="deleteUser" method="deleteUser"
+			class="test.action.AdminAction">
+			<result name="success" type="redirect">
+				admin/toUserList.action
+			</result>
+		</action>
+		
+	</namespace>
+
+</actions>

@@ -1,0 +1,1 @@
+提供对ResultSet 的各种形式的包装，所有类都实现了ResultSetHandler ，因此也可以看做是ResultSetHandler 的延伸。其功能比如把ResultSet 中每一行变成一个JavaBean或一个数组等。

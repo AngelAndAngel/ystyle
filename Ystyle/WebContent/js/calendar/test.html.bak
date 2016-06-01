@@ -1,0 +1,5 @@
+<script type="text/javascript" src="WdatePicker.js"></script>
+
+<input type="text"   name="kssjian"		onclick="WdatePicker({isShowWeek:false})" />
+
+<input type="text" 	 name="kssjian"		onclick="WdatePicker({readOnly:false,isShowOthers : false,dateFmt:'yyyy-MM-dd HH'})"	 />

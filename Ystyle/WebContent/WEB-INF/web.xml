@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	  <listener>
+		<listener-class>
+			org.ystyle.listener.AppListener
+		</listener-class>
+	</listener>
+	<filter>
+		<filter-name>mainFilter</filter-name>
+		<filter-class>org.ystyle.servlet.MainFilter</filter-class>
+		<init-param>
+			<description>
+				control action的配置文件路径 不配置，则默认为src根路径的control.xml文件
+			</description>
+			<param-name>CONTROL_CONFIG</param-name>
+			<param-value>classpath:control.xml</param-value>
+		</init-param>
+
+		<init-param>
+			<description>配置需要纳入容器管理的bean</description>
+			<param-name>BEAN_PACKAGE</param-name>
+			<param-value>com.organisms</param-value>
+		</init-param>
+
+		<init-param>
+			<description>字符编码</description>
+			<param-name>ENCODING</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>mainFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

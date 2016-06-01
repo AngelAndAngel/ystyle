@@ -1,0 +1,6 @@
+
+body{font-size:14px; font-family: Helvetica, Tahoma, Arial, sans-serif; line-height:24px;}
+/*nav*/
+.navbar{ height:100px;background:#4c7298 url(images/hd_bg.gif)}
+.navbk{ background:#4c7298 url(images/hd_bg.gif) }
+.nav a:hover{ border-bottom:3px solid #69c	; color:white; text-decoration:none;}
