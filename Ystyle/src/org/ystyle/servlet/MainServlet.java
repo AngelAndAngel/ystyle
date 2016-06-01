@@ -275,7 +275,6 @@ public class MainServlet extends HttpServlet {
 
 	public void init(ServletConfig sc) throws ServletException {
 		super.init();
-		System.out.println("初始化MainServlet");
 		servletContext = sc.getServletContext();
 		ControlXML controlXml = ControlXML.getInstance();
 		String control_config = sc.getInitParameter("CONTROL_CONFIG");

@@ -252,12 +252,9 @@ public class MainFilter implements Filter {
 				}
 			}
 
-			System.out.println(realValue+" "+fieldTypeClassName);
 			if (realValue != null && convertMap.containsKey(fieldTypeClassName)) {
-				System.out.println("r1: "+realValue);
 				realValue = convertMap.get(fieldTypeClassName).convertValue(
 						realValue, fieldField);
-				System.out.println("r2: "+realValue);
 			}
 			
 			if (realValue != null) {

@@ -118,8 +118,5 @@ public class FileConverter implements TypeConverter {
 		return null;
 	}
 
-	public static void main(String[] args) {
-		String filename = "E:\\pics\\1.jpg";
-		System.out.println(filename.substring(filename.lastIndexOf(File.separator)+1));
-	}
+	
 }
