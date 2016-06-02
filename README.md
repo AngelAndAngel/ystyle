@@ -7,7 +7,7 @@ Ystyle是本人好几年前写的一个mvc框架(拥有类似struts2+spring/aop+
 * 控制层核心API：org.ystyle.servlet.MainFilter
 * 容器管理及bean缓存：org.ystyle.Container
 * 注解定义package：org.ystyle.Annotation
-* 注解功能列表如下    
+* 注解功能列表如下
     * @Autowired:自动注入
     * @Proxy:生成代理（基于JDK动态代理）
     * @Service:Service层注解
